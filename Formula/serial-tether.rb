@@ -1,25 +1,25 @@
 class SerialTether < Formula
   desc "Serial Tether — daemon and CLI for sharing a serial device with humans and AI agents"
   homepage "https://github.com/hulryung/serial-tether"
-  version "0.3.0"
+  version "0.3.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hulryung/serial-tether/releases/download/v0.3.0/serial-tether-aarch64-apple-darwin.tar.xz"
-      sha256 "2167d4931c0a5a5ee4663fc3c30392e173a6c002b33e0d956fdde63832fae419"
+      url "https://github.com/hulryung/serial-tether/releases/download/v0.3.1/serial-tether-aarch64-apple-darwin.tar.xz"
+      sha256 "5a93375834a907c84888521af91b29c380c4ef68578aa115d8a7a2cfa82445c1"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hulryung/serial-tether/releases/download/v0.3.0/serial-tether-x86_64-apple-darwin.tar.xz"
-      sha256 "4755deb5ee953ffc4f1b997be377c573965205d27112b368e5dfdb3690af3e0e"
+      url "https://github.com/hulryung/serial-tether/releases/download/v0.3.1/serial-tether-x86_64-apple-darwin.tar.xz"
+      sha256 "719e9f048d0780993db41128a125acf8ce199745ebdf81612d9c0614e6d7026a"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/hulryung/serial-tether/releases/download/v0.3.0/serial-tether-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "98ad97795922759a9f8cd465f660ed5e0282128642c2aeb9d89d8f21a7692c71"
+      url "https://github.com/hulryung/serial-tether/releases/download/v0.3.1/serial-tether-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "df4022876c87eeb681542061d644d6707beb0e9eae09b1d8e467bf49f3ad6dee"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hulryung/serial-tether/releases/download/v0.3.0/serial-tether-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "8516aeaac94e4743a357cf8d96e24f2599869c94124e556c679f9eff12a1b836"
+      url "https://github.com/hulryung/serial-tether/releases/download/v0.3.1/serial-tether-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "42dd87f04c281651cb5e4d70a41f6a6a8720d40952f975c70812a137f2962136"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
