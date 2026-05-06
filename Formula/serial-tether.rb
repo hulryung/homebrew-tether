@@ -1,25 +1,25 @@
 class SerialTether < Formula
   desc "Daemon and CLI that lets AI agents and humans share a single serial device. Ships `tetherd` (daemon) and `tether` (non-interactive client) with JSON-RPC over NDJSON, UDS and TCP transports, and agent-friendly defaults."
   homepage "https://github.com/hulryung/serial-tether"
-  version "0.7.1"
+  version "0.8.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/hulryung/serial-tether/releases/download/v0.7.1/serial-tether-aarch64-apple-darwin.tar.xz"
-      sha256 "cc162ee793066d6a1bb3d461462d320ce21a42fbb77c48aeb0520f5107b99e2f"
+      url "https://github.com/hulryung/serial-tether/releases/download/v0.8.0/serial-tether-aarch64-apple-darwin.tar.xz"
+      sha256 "2f1fcb4b837f2c94debb61025218fecd8e4c1a7a883c790b906c1b9013246811"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hulryung/serial-tether/releases/download/v0.7.1/serial-tether-x86_64-apple-darwin.tar.xz"
-      sha256 "4aaa4013728614748f85a6a086565e4fe8825031822012d4a0ac82befe699996"
+      url "https://github.com/hulryung/serial-tether/releases/download/v0.8.0/serial-tether-x86_64-apple-darwin.tar.xz"
+      sha256 "cf10fdaa1d2bd507c6b2299ac5d674968650f79577a6dab2c6bf6030ade5a0ad"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/hulryung/serial-tether/releases/download/v0.7.1/serial-tether-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "8f9151361a59a6d8d393ad50c17f4da699609dd13e5d76d53fd017f2d09d6766"
+      url "https://github.com/hulryung/serial-tether/releases/download/v0.8.0/serial-tether-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "27c474654d352644b024f87e6031c0f459bdcf6de667a64328b490455c60f227"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hulryung/serial-tether/releases/download/v0.7.1/serial-tether-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "28a840b5486f204adb58d0125523ee9a6f63c90972f2f5c64fbd68699935bd2a"
+      url "https://github.com/hulryung/serial-tether/releases/download/v0.8.0/serial-tether-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "d39373c0c631df22db45943a727005b35c6e5993fd8b51d455c02d0cd670114a"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
